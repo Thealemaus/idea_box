@@ -1,1 +1,1 @@
-Second Sinatra Porject :happyface:
+Second Sinatra Porject 
