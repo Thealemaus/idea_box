@@ -1,33 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style type="text/css">
-	h1 {
-		color :white;
-		font-size: 50px;
-		margin-left: 300px;
-	}
-	body {
-		background: black;
-	}
-	p {
-		color: white;
-		font-size: 25px;
-	}
-	input:focus {
-		background: red;
-	}
-	h3 {
-		color: white;
-	}
-	ul {
-		color: white;
-	}
-	</style>
+	<link rel="stylesheet" href="style.css">
 	<title>IdeaBox</title>
 </head>
 <body>
+
 	<h1>IdeaBox</h1>
+	<img class="displayed" src="http://www.smallfuel.com/images/uploads/trigger-bright-bulb.jpg">
 	<form action='/' method='POST'>
 		<p>
 			Your Idea:
@@ -36,6 +16,8 @@
 		<textarea name='idea_description'></textarea><br/>
 		<input type='submit'/>
 	</form>
+	
+<hr>
 	<h3>Existing Ideas</h3>
 
 	<ul>

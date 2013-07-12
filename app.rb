@@ -18,5 +18,4 @@ class IdeaBoxApp < Sinatra::Base
   idea.save
   redirect '/'
 	end
-
 end

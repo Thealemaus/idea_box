@@ -16,7 +16,7 @@ class Idea
 	def self.raw_ideas
 		database.transaction do |db|
 			db['ideas']
-		end
+		end || []
 	end
 
 	def self.database
