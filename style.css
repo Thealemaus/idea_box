@@ -1,16 +1,18 @@
+/*body {
+	background:url(images/light.jpg);
+}
 h1 {
 	color :white;
 	font-size: 50px;
 	text-align: center;
 }
-body {
-	background: black
-}
+
 p {
 	color: white;
 	font-size: 25px;
+	text-align: center;
 }
-input:focus {
+#enter:focus {
 	background: red;
 }
 h3 {
@@ -23,8 +25,17 @@ hr {
 	color: white;
 	padding: 10px;
 }
-img.displayed {
+#submit1 {
+	background: red;
+}
+#area {
+	color: red;
+}
+[displayed] {
     display: block;
     margin-left: auto;
     margin-right: auto 
 }
+#subdel1:focus {
+	color: green;
+}*/

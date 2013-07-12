@@ -1,20 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="style.css">
+	<style type="text/css">
+body {
+	background:url(images/light1.jpg);
+}
+h1 {
+	color :black;
+	font-size: 50px;
+	text-align: center;
+}
+
+p {
+	color: black;
+	font-size: 25px;
+	text-align: center;
+}
+#enter:focus {
+	background: red;
+	background-size: 25px;
+}
+form {
+	text-align: center;
+}
+h3 {
+	color: black;
+	text-align: center;
+}
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+	}
+hr {
+	color: black;
+}
+#submit1 {
+	background: blue;
+}
+#area {
+	color: black;
+}
+img {
+	text-align: center;
+}
+li {
+	text-align: center;
+}
+
+#subdel1:focus {
+	color: black;
+}
+	</style>
 	<title>IdeaBox</title>
 </head>
 <body>
 
 	<h1>IdeaBox</h1>
-	<img class="displayed" src="http://www.smallfuel.com/images/uploads/trigger-bright-bulb.jpg">
 	<form action='/' method='POST'>
 		<p>
 			Your Idea:
 		</p>
-		<input type='text' name='idea_title'/><br/>
-		<textarea name='idea_description'></textarea><br/>
-		<input type='submit'/>
+		<input id="enter" type='text' name='idea_title'/><br/>
+		<textarea id="area" name='idea_description'></textarea><br/>
+		<input id="submit1" type='submit'/>
 	</form>
 	
 	<hr>
@@ -27,7 +76,7 @@
 			<%= idea.description %>
 			<form action='/<%= index %>' method='POST'>
 				<input type="hidden" name="_method" value="DELETE">
-				<input type='submit' value="delete"/>
+				<input id="subdel1" type='submit' value="delete"/>
 			</form>
 		</li>
 		<% end %>
